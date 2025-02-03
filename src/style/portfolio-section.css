@@ -1,0 +1,93 @@
+#portfolio {
+    overflow: hidden;
+}
+
+#portfolio > .container {
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 25px;
+    grid-auto-columns: min(400px, 100%);
+    align-items: center;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;    
+    opacity: 0;
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(25px);
+
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    transform: translateX(100px);
+
+    -webkit-transition-duration: 750ms;
+    -moz-transition-duration: 750ms;
+    -ms-transition-duration: 750ms;
+    -o-transition-duration: 750ms;
+    transition-duration: 750ms;
+    
+    &.show {
+        opacity: 1;
+        
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.card {
+    height: 100%;
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--card-border-color);
+    border-radius: .25em;
+    color: var(--card-font-color);
+    display: flex;
+    flex-direction: column;
+    opacity: 0.75;
+    text-decoration: none;
+
+    -webkit-transition-duration: 500ms;
+    -moz-transition-duration: 500ms;
+    -ms-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    
+    div:has(img) {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    h2 {
+        font-size: 2rem;
+        margin: 10px;
+    }
+    
+    p {
+        font-size: 1rem;
+        margin: 10px;
+    }
+    
+    &:hover {
+        color: var(--font-color);
+        box-shadow: 0px 5px 10px 3px var(--border-color);
+        opacity: 1;
+    }
+}
+
+#macbook {
+    margin: 25px;
+    width: calc(100% - 50px);
+}

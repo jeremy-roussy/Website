@@ -9,9 +9,9 @@
 
     <link rel="icon" type="image/x-icon" href="./assets/logo.svg">
     <link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/style/main.css">
 
-    <script src="./src/script.js" defer></script>
+    <script src="./src/main.js" defer></script>
     <script src="https://kit.fontawesome.com/47c7c2c1bd.js" crossorigin="anonymous"></script>
 
     <title>Home</title>
@@ -41,7 +41,7 @@
                 <li><a class="nav-link transition" href="#portfolio">Portfolio</a></li>
                 <li><a class="nav-link transition" href="#contact">Contact</a></li>
             </ul>
-            <i class="fa-solid fa-moon fa-lg" id="toggleLight"></i>
+            <i class="fa-solid fa-moon fa-lg" id="toggleTheme"></i>
         </nav>
 
     </header>
@@ -59,56 +59,69 @@
         </section>
 
         <section id="about" aria-labelledby="about">
-            <div class="container">
-
-                <div class="timeline-item">
-                    <h2 class="title" date-is='2017'>Graduation of a Technological baccalaureate</h2>
-                    <p>
+            <div class="timeline">
+                <ul class="timeline-list">
+                    <li class="timeline-item">
+                        <span data-title>2017</span>
+                        <h3 class="timeline-item-headline">Graduation of a Technological baccalaureate</h3>
+                        <p>- High honors</p>
+                        <p>- Specialty: architecture and construction</p>
+                        <p>- Participate in the "Habitat de demain" competition in partnership with the city of Besançon</p>
+                    </li>
+                    <li class="timeline-item">
+                        <span data-title>2020</span>
+                        <h3 class="timeline-item-headline">Internship in a company specialized in distance selling</h3>
+                        <p><b>Objective</b> : Organize a KickStarter campaign</p>
+                        <p>Assemble, program and send robots to customers who have paid for Vigibot, the company's project.</p>
+                        <p>- Model in 3D with FreeCAD</p>
+                        <p>- develop with Arduino</p>
+                        <p>- Write user manuals</p>
+                        <p>- Manage customer relations</p>
+                    </li>
+                    <li class="timeline-item">
+                        <span data-title>2021</span>
+                        <h3 class="timeline-item-headline">Intership in a subcontracting company</h3>
+                        <p><b>Objective</b> : Create and develop a connector between two aeronautical standards</p>
+                        <p>- Map ATA Spec 2000 / ASD S5000F attributes</p>
+                        <p>- Create XML messages for business use cases following standards</p>
+                        <p>- Design of a connector between both standards using XSL transformation</p>
+                        <p>- Functional testing</p>
+                        <p>- Write functional specifications</p>
+                    </li>
+                    <li class="timeline-item">
+                        <span data-title>2022</span>
+                        <h3 class="timeline-item-headline">Internship in a provider of multi-asset electronic trading plateforms</h3>
+                        <p><b>Objective</b> : Create a framework for two software components</p>
+                        <p>- Migrate classes, abstract classes, and interfaces</p>
+                        <p>- Modify of Spring configurations</p>
+                        <p>- Fix unit tests using JUnit, Mockito, and PowerMockito frameworks</p>
+                        <p>- Implement new features</p>
                         
-                    </p>
-                </div>
-                
-                <div class="timeline-item">
-                    <h2 class="title" date-is='2020'>Internship in a company specialized in distance selling</h2>
-                    <p>
-                        <b>Objective</b> : Organization of a KickStarter campaign
-                    </p>
-                    <p>
-                        Assemble, program and send robots to customers who have paid for Vigibot, the company's project.
-                    </p>
-                </div>
-                
-                <div class="timeline-item">
-                    <h2 class="title" date-is='2021'>Intership in a subcontracting company</h2>
-                    <p>
-                        <b>Objective</b> : Creation and development of a connector between two aeronautical standards
-                    </p>
-                    <p>
-
-                    </p>
-                </div>
-
-                <div class="timeline-item">
-                    <h2 class="title" date-is='2022'>Internship in a provider of multi-asset electronic trading plateforms</h2>
-                    <p>
-                        <b>Objective</b> : Creation of a framework for two software components
-                    </p>
-                    <p>
-                        
-                    </p>
-                    <br>
-                    <h2>Graduation of two Master Degrees</h2>
-                    <p>
-                        
-                    </p>
-                </div>
-
-                <div class="timeline-item">
-                    <h2 class="title" date-is='2023'>Research and development engineer</h2>
-                    <p>
-                        <b>Objective</b> : Creation of a framework for two software components
-                    </p>
-                </div>
+                        <h3 class="timeline-item-headline">Graduate from engineering school and university</h3>
+                        <p></p>
+                    </li>
+                    <li class="timeline-item">
+                        <span data-title>2023</span>
+                        <h3 class="timeline-item-headline">Software development engineer in an ERP provider</h3>
+                        <p><b>Objective</b> : Develop and adapt features</p>
+                        <p>- Analyse user needs and functional study</p>
+                        <p>- Migrate data</p>
+                        <p>- Create a REST API</p>
+                        <p>- Test and make corrective maintenance while meeting deadlines and quality standards in an object-oriented environment</p>
+                        <p>- deploy application on multiple instances</p>
+                    </li>
+                    <li class="timeline-item">
+                        <span data-title>2024</span>
+                        <h3 class="timeline-item-headline">Professional training</h3>
+                        <p>- Translate client needs into functional specifications</p>
+                        <p>- Define a technical architecture suited to the requirements</p>
+                        <p>- Design, develop, and test applications in an agile environment</p>
+                        <p>- Enhance web pages with Angular</p>
+                        <p>- Secure web application with Spring security</p>
+                        <p>- Process http requests with Spring web</p>                        
+                        <p>- Make database queries with Spring data JPA and Hibernate</p>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -120,14 +133,14 @@
                         <path d="M2 126.5V86H258V0M366.5 422.5V0M741.5 133V86H481.5V0" stroke="url(#paint_linear)" stroke-width="4"></path>
                         <defs>
                             <linearGradient id="paint_linear" x1="371.963" y1="12" x2="359.62" y2="389.388" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#f26419"></stop>
+                                <stop stop-color="#f26419" offset="0"></stop>
                                 <stop id="tree_gradient" class="transition" offset="1" stop-opacity="0"></stop>
                             </linearGradient>
                         </defs>
                     </svg>
                 </div>
                 <div class="technologies">
-                    <div class="front">
+                    <div class="front-end">
                         <button class="transition">html</button>
                         <button class="transition">css</button>
                         <button class="transition">javascript</button>
@@ -135,7 +148,7 @@
                         <button class="transition">typescript</button>
                         <button class="transition">angular</button>
                     </div>
-                    <div class="back">
+                    <div class="back-end">
                         <button class="transition">java</button>
                         <button class="transition">junit</button>
                         <button class="transition">mockito</button>
@@ -167,16 +180,31 @@
         </section>
         
         <section id="portfolio" aria-labelledby="portfolio">
-            <div class="container snaps-inline" id="card-container">
-                <div class="card">
-                    <div><img src="./assets/heaven_mighty.svg" alt=""></div>
+            <div class="container" id="card-container">
+                <a href="https://github.com/jeremy-roussy/CalculFleche" target="_blank" rel="noopener noreferrer" class="card">
+                    <div><img src="./assets/calculFleche.png" alt="calcul fleche application screenshot"></div>
+                    <h2>Calcul Fleche</h2>
+                    <p>This app calculates the deflection (deformation) of materials under load, based on their mechanical properties and applied stresses. It accounts for various material types, cross-sections, and support configurations, providing accurate results.</p>
+                </a>
+                <a href="https://github.com/jeremy-roussy/Heaven_Mighty/" target="_blank" rel="noopener noreferrer" class="card">
+                    <div><img src="./assets/heaven_mighty.svg" alt="Heaven Mighty game logo"></div>
                     <h2>Heaven Mighty</h2>
                     <p>This project was created during my third year at the engineering school ESTIA when I was following the MIAGE MBDS Master double diploma courses, with the Côte d'Azur University.</p>
-                </div>
+                </a>
+                <a href="https://github.com/jeremy-roussy/Macbook/" target="_blank" rel="noopener noreferrer" class="card">
+                    <div><img src="./assets/macbook.png" alt="Web MacBook screenshot"></div>
+                    <h2>MacBook</h2>
+                    <p>This project simulates the user experience of a MacBook on a web platform. It mimics the interface and some features of macOS, providing users with an interactive, virtual MacBook environment. Users can explore the desktop, open apps, and interact with elements such as the dock, system preferences, and terminal.</p>
+                </a>
+                <a href="https://github.com/jeremy-roussy/plateformer" target="_blank" rel="noopener noreferrer" class="card">
+                    <div><img src="./assets/plateform_game.png" alt="platform game screenshot"></div>
+                    <h2>Plateform game</h2>
+                    <p>This project is a 2D side-scrolling platformer where players navigate through levels, jump over obstacles, and defeat enemies to reach the goal.</p>
+                </a>
                 <div class="card">
-                    <div><img id="macbook" src="./assets/macbook.png" alt=""></div>
-                    <h2>Macbook</h2>
-                    <p></p>
+                    <div><img src="./assets/Pok'ERP.png" alt="Pok'ERP application screenshot"></div>
+                    <h2>Pok'ERP</h2>
+                    <p>Pok'ERP is an application that catalogs all Pokémon and their associated cards. It allows collectors and players to easily search for cards by edition and type, as well as Pokémon by generation and type, to access their statistics.</p>
                 </div>
             </div>
         </section>
@@ -185,7 +213,7 @@
             <div class="container">
                 <h1>Get in Touch</h1>
                 <p>
-                    Young Java developer engineer aged 24 with practical experience acquired during several internships and jobs.
+                    Java developer engineer aged 25 with practical experience acquired during several internships and jobs.
                     Competent in application development, I am looking to join a dynamic team in order to continue to progress.</p>
                 <a class="resume_button" href="./assets/resume.pdf" target="_blank" rel="noopener noreferrer">resume</a>    
             </div>
